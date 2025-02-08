@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
-  const { isAuthenticated, getUser } = getKindeServerSession();
+  const { isAuthenticated } = getKindeServerSession();
   const isLoggedIn = await isAuthenticated();
   return (
     <div className="bg-[#5DC9A8] min-h-screen flex flex-col xl:flex-row items-center justify-center gap-10 px-4">
